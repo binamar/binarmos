@@ -24,7 +24,7 @@ jobs:
       - name: Wrap Vite dist as Android app and build APK
         run: |
           npm i --no-save --legacy-peer-deps @capacitor/core@7 @capacitor/cli@7 @capacitor/android@7
-          npx cap init "MP3 Visualizer Studio" com.example.mp3visualizer --web-dir dist
+          echo '{"appId":"com.example.mp3visualizer","appName":"MP3 Visualizer Studio","webDir":"dist"}' > capacitor.config.json
           npx cap add android
           npx cap sync android
           cd android && chmod +x gradlew && ./gradlew assembleDebug
