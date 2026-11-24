@@ -1,0 +1,10 @@
+{
+  "name": "MP3 Visualizer Studio",
+  "description": "Interactive MP3 and audio visualizer with 7 reactive modes, 3-band live equalizer, playlist queue, and bilingual Arabic/English studio interface.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
