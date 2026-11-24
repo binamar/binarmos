@@ -19,7 +19,7 @@ jobs:
           java-version: 21
       - name: Build web bundle
         run: |
-          npm install --no-audit --no-fund
+          npm install --legacy-peer-deps --no-audit --no-fund
           npm run build
       - name: Wrap Vite dist as Android app and build APK
         run: |
